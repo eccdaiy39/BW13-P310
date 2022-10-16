@@ -3620,6 +3620,14 @@ int fp13_is_square(fp13_t a);
  * @param[in] b				- the exponent.
  */
 void fp13_exp(fp13_t c,fp13_t a,bn_t b);
+/**
+ * Computes a power of a 13-th extension field element in GT.
+ *
+ * @param[out] c			- the result.
+ * @param[in] a				- the basis.
+ * @param[in] b				- the exponent.
+ */
+void fp13_exp_gt(fp13_t c,fp13_t a,bn_t b);
 
 
 /**

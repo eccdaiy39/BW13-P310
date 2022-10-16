@@ -63,7 +63,7 @@ static void ep13_mul_glv_imp(ep13_t r, ep13_t p, bn_t k) {
 		fp_prime_get_par(u);
 		bn_neg(u,u);
 		bn_mod(_k[0], k, n);
-		bn_rec_frb(_k, 24, _k[0], u, n, ep_curve_is_pairf() == EP_BW13);
+		bn_rec_frb(_k, 24, _k[0], u, n, 0);
 
 		ep13_norm(q[0], p);
 		for (i = 1; i < 24; i++)ep13_psi(q[i], q[i-1], 1);
