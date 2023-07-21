@@ -29,10 +29,10 @@ The main source code of our algorithms are distributed in different folders.  Th
 * ep13_map(ep13_t p, const uint8_t *msg, int len) : hashing to $\mathbb{G}_2$
 * ep_mul(ep_t q, ep_t p, bn_t k) : given a random point $p\in \mathbb{G}_1$ and a random scalar $k$, computing $q=[k]p$
 * ep13_mul(ep13_t q, ep13_t p, bn_t k) : given a random point $p\in \mathbb{G}_2$ and a random scalar $k$, computing $q=[k]p$
-* fp13_exp_gt(fp13_t h1, fp13_t h0,  bn_t k) : given a random point $h0\in \mathbb{G}_T$ and a random exp $k$, computing $h1={h0}^k$
+* fp13_exp_gt(fp13_t $h_1$, fp13_t $h_0$,  bn_t k) : given a random point $h_0\in \mathbb{G}_T$ and a random exp $k$, computing $h_1={h_0}^k$
 * g1_is_valid_bw13(ep_t p): Checking whether $p$ is a point of $\mathbb{G}_1$ or not.
 * g2_is_valid_bw13(ep13_t q): Checking whether $q$ is a point of $\mathbb{G}_2$ or not.
-* gt_is_valid_bw13(fp13_t h0): Checking whether $h0$ is a element of $\mathbb{G}_T$ or not.
+* gt_is_valid_bw13(fp13_t $h_0$): Checking whether $h_0$ is a element of $\mathbb{G}_T$ or not.
 
 ### Testings, benckmarks and comparisons
 * Testings and benckmarks: Function testings and benckmarking can be done by performing the following commands：
